@@ -98,11 +98,11 @@
 
 
 // anonymous function : j function er kono Nam hoi na variable diye function lekha hoi============
-$multiply = function ($x, $y) {
-	return $x * $y;
-};
+// $multiply = function ($x, $y) {
+// 	return $x * $y;
+// };
 
-var_dump($multiply(4,5));
+// var_dump($multiply(4,5));
 
 
 //Arrow Function:==========
@@ -118,7 +118,8 @@ var_dump($multiply(4,5));
 //variable function=======
 // $name='strlen';
 // echo $name('tanvir');
-
+$name='strlen';
+echo $name('rahul');
 
 
 ?> 
