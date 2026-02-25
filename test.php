@@ -118,8 +118,15 @@
 //variable function=======
 // $name='strlen';
 // echo $name('tanvir');
-$name='strlen';
-echo $name('rahul');
+// $name='strlen';
+// echo $name('rahul');
+
+$list=[20,40,60];
+$result=array_map(
+    fn($items)=>$items*2, $list
+);
+print_r($result);
+
 
 
 ?> 
