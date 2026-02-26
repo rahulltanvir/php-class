@@ -121,13 +121,35 @@
 // $name='strlen';
 // echo $name('rahul');
 
-$list=[20,40,60];
-$result=array_map(
-    fn($items)=>$items*2, $list
-);
-print_r($result);
+//  
 
 
+// $lengths = [10, 20, 30];
+
+// // calculate areas
+// $areas = array_map(function ($length) {
+// 	return $length * $length;
+// }, $lengths);
+
+
+// print_r($areas);
+
+
+//array_map length
+class Square
+{
+	public static function area($length)
+	{
+		return $length * $length;
+	}
+}
+
+$lengths = [10, 20, 30];
+
+$areas = array_map('Square::area', $lengths);
+
+
+print_r($areas);
 
 ?> 
 
