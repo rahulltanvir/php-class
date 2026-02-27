@@ -136,22 +136,49 @@
 
 
 //array_map length
-class Square
-{
-	public static function area($length)
-	{
-		return $length * $length;
-	}
-}
+// class Square
+// {
+// 	public static function area($length)
+// 	{
+// 		return $length * $length;
+// 	}
+// }
 
-$lengths = [10, 20, 30];
+// $lengths = [10, 20, 30];
 
-$areas = array_map('Square::area', $lengths);
+// $areas = array_map('Square::area', $lengths);
 
 
-print_r($areas);
+// print_r($areas);
 
-?> 
+
+
+
+// // array array_reduce()
+
+
+
+// $numbers = [20,40,50];
+
+// $total  = array_reduce($numbers, function ($previous, $current) {
+//     return $previous + $current;
+// });
+
+// echo $total; // 60
+
+
+//
+$a=40;
+$b=60;
+$c=400;
+
+// সবচেয়ে বড় সংখ্যা খুঁজে বের করা
+$maior = max($a, $b, $c);
+
+// আউটপুট দেখানো
+echo "$maior eh o maior";
+?>
+
 
 
 
